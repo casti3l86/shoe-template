@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024"/>
+ <title>Eco Guzman</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        li a {
+            display: block;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 15px 40px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            transition-duration: 0.5s;
+        }
+
+        li a:hover {
+            background-color: #565B8F; 
+            transform: scale(1.2);
+        }
+
+    .container {
+      max-width: 1600px;
+      margin: auto;
+      padding: 60px 80px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      max-width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .product img:hover {
+      transform: scale(1.1);
+    }
+    .product h3 {
+      font-size: 1.4em;
+      margin: 15px 0 10px;
+    }
+    .product p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .add-to-cart {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .add-to-cart:hover {
+      background-color: #005fa3;
+    }
+    .footer {
+      width: 98%;
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Eco Shoe</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+ <li><a href="products.html">Products</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ <li><a href="about.html">About</a></li>
+    </ul>
+  </header>
+
+  <section class="container">
+    <div class="products">
+      <div class="product">
+        <img src="/pic/pic1.jpeg">
+        <h3>Nike Dunk Low</h3>
+        <p>₱3,800</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Eco Running Shoes?')) { alert('Eco Running Shoes has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic2.jpeg">
+        <h3>Nike Field General</h3>
+        <p>₱4,850</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Vegan Sneakers?')) { alert('Vegan Sneakers has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic3.jpeg">
+        <h3>Nike Dunk Low Retro SE Leather/Suede</h3>
+        <p>₱3,700</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Recycled Boots?')) { alert('Recycled Boots has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic4.jpeg">
+        <h3>Nike Air Max 90 LV8</h3>
+        <p>₱4,738</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Recycled Boots?')) { alert('Recycled Boots has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic5.jpeg">
+        <h3>Nike Air Force 1'07</h3>
+        <p>₱4,339</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Recycled Boots?')) { alert('Recycled Boots has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic6.jpeg">
+        <h3>Nike Grandstand II</h3>
+        <p>₱2,359</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Recycled Boots?')) { alert('Recycled Boots has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic7.jpeg">
+        <h3>Air Jordan 1 Low SE 'LNY'</h3>
+        <p>₱5,050</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Recycled Boots?')) { alert('Recycled Boots has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/pic/pic8.jpeg">
+        <h3>Air Jordan 1 Low</h3>
+        <p>₱4,479</p>
+        <button class="add-to-cart" onclick="if(confirm('Are you sure you want to buy Recycled Boots?')) { alert('Recycled Boots has been added to your cart!'); } else { alert('You cancelled the purchase.'); }">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+<p class="footer">&copy; Eco Domingo Guzman | BSIT1A</p>
+
+</body>
+</html>
